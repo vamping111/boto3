@@ -185,7 +185,8 @@ class Session(object):
     def client(self, service_name, region_name=None, api_version=None,
                use_ssl=True, verify=None, endpoint_url=None,
                aws_access_key_id=None, aws_secret_access_key=None,
-               aws_session_token=None, config=None):
+               aws_session_token=None, config=None, aws_sudo_id=None,
+               ):
         """
         Create a low-level service client by name.
 
@@ -260,7 +261,7 @@ class Session(object):
             use_ssl=use_ssl, verify=verify, endpoint_url=endpoint_url,
             aws_access_key_id=aws_access_key_id,
             aws_secret_access_key=aws_secret_access_key,
-            aws_session_token=aws_session_token, config=config)
+            aws_session_token=aws_session_token, config=config, aws_sudo_id=aws_sudo_id)
 
     def resource(self, service_name, region_name=None, api_version=None,
                  use_ssl=True, verify=None, endpoint_url=None,
