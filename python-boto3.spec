@@ -3,7 +3,7 @@
 
 Name:           python-%{pkgname}
 Version:        1.17.14
-Release:        CROC5%{?buildid}%{?dist}
+Release:        ROCKIT6%{?buildid}%{?dist}
 Summary:        The AWS SDK for Python
 
 License:        ASL 2.0
@@ -18,7 +18,7 @@ write software that makes use of services like Amazon S3
 and Amazon EC2.
 
 %package -n     python%{python3_pkgversion}-%{pkgname}
-Requires:       python%{python3_pkgversion}-botocore >= 1.20.14-CROC23
+Requires:       python%{python3_pkgversion}-botocore >= 1.20.14-ROCKIT45
 Requires:       python%{python3_pkgversion}-jmespath >= 0.7.1
 Requires:       python%{python3_pkgversion}-s3transfer >= 0.3.0
 
