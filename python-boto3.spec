@@ -3,7 +3,7 @@
 
 Name:           python-%{pkgname}
 Version:        1.17.14
-Release:        ROCKIT5%{?buildid}%{?dist}
+Release:        ROCKIT6%{?buildid}%{?dist}
 Summary:        The AWS SDK for Python
 
 License:        ASL 2.0
@@ -52,6 +52,9 @@ rm -rf tests/integration
 %{python3_sitelib}/%{pkgname}-%{version}-*.egg-info
 
 %changelog
+* Tue Jul 23 2024 Linar Nasyyrov <lnasyyrov@k2.cloud> - 1.17.14-ROCKIT6
+- spec: move to ROCKIT
+
 * Wed Jan 23 2023 Andrey Kulaev <akulaev@croc.ru> - 1.17.14-CROC5
 - spec: add centos 8.4 support
 
